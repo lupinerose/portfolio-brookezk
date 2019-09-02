@@ -59,13 +59,16 @@ li {
   /* align-content: center; */
   align-items: flex-start;
   /* align-self: center; */
-  justify-content: center;
+  justify-content: left;
   /* border: 1px solid black; */
 }
 
 
 h1 {
-  font-size: 100px;
+  margin: -10px 0px 0px 40px;
+  font-family: 'Yesteryear';
+  letter-spacing: .1em;
+  font-size: 140px;
   mix-blend-mode: difference;
   color: white;
   /* text-align: center; */
