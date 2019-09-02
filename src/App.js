@@ -18,27 +18,27 @@ class App extends React.Component {
     if (window.scrollY > 4095) {
       this.setState({
         active: 'contact',
-        transform: scrollTop - 4095})
+        transform: scrollTop - 4195})
     } else if (window.scrollY > 3395) {
       this.setState({
         active: 'projects',
-        transform: scrollTop - 3395})
+        transform: scrollTop - 3485})
     } else if (window.scrollY > 2715) {
       this.setState({
         active: 'projects',
-        transform: scrollTop - 2715})
+        transform: scrollTop - 2785})
     } else if (window.scrollY > 2035) {
       this.setState({
         active: 'projects',
-        transform: scrollTop - 2035})
+        transform: scrollTop - 2095})
     } else if (window.scrollY > 1355) {
       this.setState({
         active: 'projects',
-        transform: scrollTop - 1355})
+        transform: scrollTop - 1395})
     } else if (window.scrollY > 675) {
       this.setState({
         active: 'stack',
-        transform: scrollTop - 675})
+        transform: scrollTop - 705})
     } else {
       this.setState({
         active: 'about',
