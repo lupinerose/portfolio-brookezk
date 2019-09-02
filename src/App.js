@@ -78,8 +78,12 @@ class App extends React.Component {
           <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
-          <About />
+          <div>
+            <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
+            <div className="flexAbout">
+              <About />
+            </div>
+          </div>
         </div>
         <div id="stack" className="stack container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
