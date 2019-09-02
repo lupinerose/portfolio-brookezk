@@ -5,7 +5,7 @@ import Nav from './components/Nav'
 class App extends Component() {
   constructor(props) {
     super(props)
-    state = {
+    this.state = {
       active: 'about'
     }
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
@@ -27,13 +27,12 @@ class App extends Component() {
     window.addEventListener('scroll', this.listenScrollEvent)
   }
 
-
-
   render() {
+
     return (
       <div className="App">
         <div className="fixedNav">
-          <Nav />
+          <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
           <h1>Brooke Kullberg</h1>
