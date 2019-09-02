@@ -13,23 +13,45 @@ class App extends React.Component {
   
 
   listenScrollEvent = e => {
-    if (window.scrollY > 4180) {
-      this.setState({active: 'contact'})
-    } else if (window.scrollY > 1380) {
-      this.setState({active: 'projects'})
-    } else if (window.scrollY > 680) {
-      this.setState({active: 'stack'})
+    let scrollTop = window.scrollY;
+    console.log(scrollTop)
+    if (window.scrollY > 4045) {
+      this.setState({
+        active: 'contact',
+        transform: scrollTop - 4095})
+    } else if (window.scrollY > 3395) {
+      this.setState({
+        active: 'projects',
+        transform: scrollTop - 3395})
+    } else if (window.scrollY > 2715) {
+      this.setState({
+        active: 'projects',
+        transform: scrollTop - 2715})
+    } else if (window.scrollY > 2035) {
+      this.setState({
+        active: 'projects',
+        transform: scrollTop - 2035})
+    } else if (window.scrollY > 1355) {
+      this.setState({
+        active: 'projects',
+        transform: scrollTop - 1355})
+    } else if (window.scrollY > 675) {
+      this.setState({
+        active: 'stack',
+        transform: scrollTop - 675})
     } else {
-      this.setState({active: 'about'})
+      this.setState({
+        active: 'about',
+        transform: scrollTop})
     } 
   }
 
-  handleScroll = e => {
-    let scrollTop = window.scrollY;
-    this.setState({
-      transform: scrollTop
-    });
-  }
+  // handleScroll = e => {
+  //   let scrollTop = window.scrollY;
+  //   this.setState({
+  //     transform: scrollTop
+  //   });
+  // }
 
   
   componentDidMount() {
@@ -47,32 +69,32 @@ class App extends React.Component {
     let style = {
       transform: "translateY(" + num + "px)"
     };
-    
+
     return (
       <div className="App">
         <div className="fixedNav">
           <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
-          <h1 style={style} onScroll={this.handleScroll}>Brooke Kullberg</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
         </div>
         <div id="stack" className="stack container">
-        <h1>Stack</h1>
+        <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
         </div>
         <div id="projects" className="project1 container">
-          <h1>Project 1</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Project 1</h1>
         </div>
         <div className="project2 container">
-        <h1>Project 2</h1>
+        <h1 style={style} onScroll={this.listenScrollEvent}>Project 2</h1>
         </div>
         <div className="project3 container">
-          <h1>Project 3</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Project 3</h1>
         </div>
         <div className="project4 container">
-          <h1>Project 4</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Project 4</h1>
         </div>
         <div id="contact" className="contact container">
-          <h1>Contact</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1>
         </div>
       </div>
     );
