@@ -6,11 +6,17 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: 'about'
+      active: 'about',
+      transform: 'transform: "translateY(0px)"'
     };
-    this.listenScrollEvent = this.listenScrollEvent.bind(this);
-    this.handleScrool = this.handleScrool.bind(this);
+    // let style = {
+    //   transform: "transform: translateY(0px)"
+    // }
+    // this.style = { transform: 'translateY(0px)' };
+    // this.listenScrollEvent = this.listenScrollEvent.bind(this);
+    // this.handleScroll = this.handleScroll.bind(this);
   }
+  
 
   listenScrollEvent = e => {
     if (window.scrollY > 4180) {
@@ -25,28 +31,41 @@ class App extends React.Component {
   }
 
   handleScroll = e => {
-    
+    // let scrollTop = window.scrollY;
+    // let scrollTop = e.srcElement.body.scrollTop;
+    let itemTranslate = -60;
+    // let itemTranslate = Math.min(0, scrollTop/3 - 60);
+    // console.log(scrollTop);
+    console.log(itemTranslate);
+    // console.log(typeof(scrollTop));
+    this.setState({
+      transform: `transform: translateY(${itemTranslate}px)`
+    });
+    // console.log(itemTranslate);
   }
 
+  
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent);
     window.addEventListener('scroll', this.handleScroll);
   }
-
+  
   componentWillUnmount() {
     window.removeEventListener('scroll', this.listenScrollEvent);
     window.removeEventListener('scroll', this.handleScroll);
   }
-
+  
   render() {
-    // console.log(this.state);
+    let style = this.state.transform;
+    console.log(this.state.transform);
+    console.log(style);
     return (
       <div className="App">
         <div className="fixedNav">
           <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
-          <h1 id="slide">Brooke Kullberg</h1>
+          <h1 style={{style}}>Brooke Kullberg</h1>
         </div>
         <div id="stack" className="stack container">
         <h1>Stack</h1>
