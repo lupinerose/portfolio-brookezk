@@ -1,6 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function Nav() {
+export default function Nav(props) {
+  console.log(props.active)
   return (
     <div>
       <ul>
@@ -12,3 +14,7 @@ export default function Nav() {
     </div>
   )
 }
+
+Nav.propTypes = {
+  active: PropTypes.string
+};
