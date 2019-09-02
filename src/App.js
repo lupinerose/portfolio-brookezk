@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav.jsx'
+import About from './components/About.jsx'
+import Stack from './components/Stack.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -77,9 +79,11 @@ class App extends React.Component {
         </div>
         <div id="about" className="about container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
+          <About />
         </div>
         <div id="stack" className="stack container">
-        <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
+          <Stack />
         </div>
         <div id="projects" className="project1 container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Project 1</h1>
