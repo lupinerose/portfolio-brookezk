@@ -14,6 +14,10 @@ class App extends Component() {
   }
 
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.listenScrollEvent)
+  }
+
 
 
   render() {
