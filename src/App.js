@@ -7,15 +7,8 @@ class App extends React.Component {
     super(props);
     this.state = {
       active: 'about',
-      // transform: 'color: black'
       transform: 0
     };
-    // let style = {
-    //   transform: "transform: translateY(0px)"
-    // }
-    // this.style = { transform: 'translateY(0px)' };
-    // this.listenScrollEvent = this.listenScrollEvent.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
   }
   
 
@@ -33,17 +26,9 @@ class App extends React.Component {
 
   handleScroll = e => {
     let scrollTop = window.scrollY;
-    // let scrollTop = e.srcElement.body.scrollTop;
-    // let itemTranslate = this.state.transform;
-    // let itemTranslate = Math.min(0, scrollTop/3 - 60);
-    // console.log(scrollTop);
-    console.log(scrollTop);
-    // console.log(typeof(scrollTop));
     this.setState({
-      // transform: 'color: red'
       transform: scrollTop
     });
-    // console.log(itemTranslate);
   }
 
   
@@ -62,8 +47,7 @@ class App extends React.Component {
     let style = {
       transform: "translateY(" + num + "px)"
     };
-    console.log(this.state.transform);
-    console.log(style);
+    
     return (
       <div className="App">
         <div className="fixedNav">
