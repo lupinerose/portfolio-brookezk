@@ -12,12 +12,13 @@ class App extends React.Component {
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 700) {
-      this.setState({active: 'stack'})
+
+    if (window.scrollY > 4200) {
+      this.setState({active: 'contact'})
     } else if (window.scrollY > 1400) {
       this.setState({active: 'projects'})
-    } else if (window.scrollY > 4200) {
-      this.setState({active: 'contact'})
+    } else if (window.scrollY > 700) {
+      this.setState({active: 'stack'})
     } else {
       this.setState({active: 'about'})
     } 
@@ -28,7 +29,7 @@ class App extends React.Component {
   }
 
   render() {
-
+    console.log(this.state);
     return (
       <div className="App">
         <div className="fixedNav">
