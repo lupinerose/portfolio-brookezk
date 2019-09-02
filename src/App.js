@@ -9,10 +9,10 @@ class App extends React.Component {
       active: 'about'
     };
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
+    this.handleScrool = this.handleScrool.bind(this);
   }
 
   listenScrollEvent = e => {
-
     if (window.scrollY > 4180) {
       this.setState({active: 'contact'})
     } else if (window.scrollY > 1380) {
@@ -24,8 +24,18 @@ class App extends React.Component {
     } 
   }
 
+  handleScroll = e => {
+    
+  }
+
   componentDidMount() {
-    window.addEventListener('scroll', this.listenScrollEvent)
+    window.addEventListener('scroll', this.listenScrollEvent);
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.listenScrollEvent);
+    window.removeEventListener('scroll', this.handleScroll);
   }
 
   render() {
@@ -36,7 +46,7 @@ class App extends React.Component {
           <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
-          <h1>Brooke Kullberg</h1>
+          <h1 id="slide">Brooke Kullberg</h1>
         </div>
         <div id="stack" className="stack container">
         <h1>Stack</h1>
