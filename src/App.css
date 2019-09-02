@@ -7,6 +7,8 @@
   background-image: linear-gradient(red, yellow, green, purple, black);
 } */
 
+
+
 .fixedNav {
   position: fixed;
   z-index: 1;
@@ -14,6 +16,14 @@
   top: 0;
   right: 0;
   padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .App {
