@@ -13,11 +13,11 @@ class App extends React.Component {
 
   listenScrollEvent = e => {
 
-    if (window.scrollY > 4200) {
+    if (window.scrollY > 4180) {
       this.setState({active: 'contact'})
-    } else if (window.scrollY > 1400) {
+    } else if (window.scrollY > 1380) {
       this.setState({active: 'projects'})
-    } else if (window.scrollY > 700) {
+    } else if (window.scrollY > 680) {
       this.setState({active: 'stack'})
     } else {
       this.setState({active: 'about'})
