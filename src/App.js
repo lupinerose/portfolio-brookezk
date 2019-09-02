@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Nav from './components/Nav'
+import Nav from './components/Nav.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -29,7 +29,7 @@ class App extends React.Component {
   }
 
   render() {
-    console.log(this.state);
+    // console.log(this.state);
     return (
       <div className="App">
         <div className="fixedNav">
