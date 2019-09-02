@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Nav from './components/Nav'
 
-class App extends Component() {
+class App extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       active: 'about'
-    }
+    };
     this.listenScrollEvent = this.listenScrollEvent.bind(this);
   }
 
