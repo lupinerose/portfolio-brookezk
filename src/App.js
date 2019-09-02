@@ -8,13 +8,13 @@ function App() {
       <div className="fixedNav">
         <Nav />
       </div>
-      <div className="about container">
+      <div id="about" className="about container">
         <h1>Brooke Kullberg</h1>
       </div>
-      <div className="stack container">
+      <div id="stack" className="stack container">
       <h1>Stack</h1>
       </div>
-      <div className="project1 container">
+      <div id="projects" className="project1 container">
         <h1>Project 1</h1>
       </div>
       <div className="project2 container">
@@ -26,7 +26,7 @@ function App() {
       <div className="project4 container">
         <h1>Project 4</h1>
       </div>
-      <div className="contact container">
+      <div id="contact" className="contact container">
         <h1>Contact</h1>
       </div>
     </div>
