@@ -2,20 +2,29 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Nav(props) {
-  console.log(props.activeLink)
-  let style = '';
-  props.activeLink === 'about' ? style = 'bold' : style = '';
-  props.activeLink === 'stack' ? style = 'bold' : style = '';
-  props.activeLink === 'projects' ? style = 'bold' : style = '';
-  props.activeLink === 'contact' ? style = 'bold' : style = '';
+  let yellowGlow = {
+    textShadow: "0 0 8px yellow"
+  }
+
+  let redGlow = {
+    textShadow: "0 0 8px red"
+  }
+
+  let greenGlow = {
+    textShadow: "0 0 8px green"
+  }
+
+  let blueGlow = {
+    textShadow: "0 0 8px blue"
+  }
 
   return (
     <div>
       <ul>
-        <li><a className={style} href="#about">About</a></li>
-        <li><a className={style} href="#stack">Stack</a></li>
-        <li><a className={style} href="#projects">Projects</a></li>
-        <li><a className={style} href="#contact">Contact</a></li>
+        {props.activeLink === 'about' ? <li style={yellowGlow}><a className='bold' href="#about">About</a></li> : <li><a href="#about">About</a></li>}
+        {props.activeLink === 'stack' ? <li style={blueGlow}><a className='bold' href="#stack">Stack</a></li> : <li><a href="#stack">Stack</a></li>}
+        {props.activeLink === 'projects' ? <li style={redGlow}><a className='bold' href="#projects">Projects</a></li> : <li><a href="#projects">Projects</a></li>}
+        {props.activeLink === 'contact' ? <li style={greenGlow}><a className='bold' href="#contact">Contact</a></li> : <li><a href="#contact">Contact</a></li>}
       </ul>
     </div>
   )
