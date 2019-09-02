@@ -6,13 +6,21 @@ class App extends Component() {
   constructor(props) {
     super(props)
     state = {
-      aboutActive: true,
-      stackActive: false,
-      projectsActive: false,
-      contactActive: false
+      active: 'about'
     }
   }
 
+  listenScrollEvent = e => {
+    if (window.scrollY > 700 && ) {
+      this.setState({active: 'stack'})
+    } else if (window.scrollY > 1400) {
+      this.setState({active: 'projects'})
+    } else if (window.scrollY > 4200) {
+      this.setState({active: 'contact'})
+    } else {
+      this.setState({active: 'about'})
+    } 
+  }
 
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent)
