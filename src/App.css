@@ -67,8 +67,13 @@ li {
   /* border: 1px solid black; */
 }
 
+.flexAbout {
+  display: flex;
+  justify-content: center;
+}
 
 h1 {
+  z-index: 1;
   margin: -10px 0px 0px 40px;
   font-family: 'Shrikhand', cursive;
   letter-spacing: .1em;
