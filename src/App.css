@@ -7,6 +7,9 @@
   background-image: linear-gradient(red, yellow, green, purple, black);
 } */
 
+html {
+  scroll-behavior: smooth;
+}
 
 
 .fixedNav {
