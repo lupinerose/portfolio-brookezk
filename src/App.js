@@ -8,10 +8,11 @@ class App extends Component() {
     state = {
       active: 'about'
     }
+    this.listenScrollEvent = this.listenScrollEvent.bind(this);
   }
 
   listenScrollEvent = e => {
-    if (window.scrollY > 700 && ) {
+    if (window.scrollY > 700) {
       this.setState({active: 'stack'})
     } else if (window.scrollY > 1400) {
       this.setState({active: 'projects'})
