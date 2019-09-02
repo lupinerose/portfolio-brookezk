@@ -3,22 +3,19 @@ import PropTypes from 'prop-types';
 
 export default function Nav(props) {
   console.log(props.activeLink)
-  let bold ={
-    fontWeight: 'bold'
-  }
-  let link = {};
-  props.activeLink === 'about' ? link = bold : link = {};
-  props.activeLink === 'stack' ? link = bold : link = {};
-  props.activeLink === 'projects' ? link = bold : link = {};
-  props.activeLink === 'contact' ? link = bold : link = {};
+  let style = '';
+  props.activeLink === 'about' ? style = 'bold' : style = '';
+  props.activeLink === 'stack' ? style = 'bold' : style = '';
+  props.activeLink === 'projects' ? style = 'bold' : style = '';
+  props.activeLink === 'contact' ? style = 'bold' : style = '';
 
   return (
     <div>
       <ul>
-        <li><a className={link} href="#about">About</a></li>
-        <li><a className={link} href="#stack">Stack</a></li>
-        <li><a className={link} href="#projects">Projects</a></li>
-        <li><a className={link} href="#contact">Contact</a></li>
+        <li><a className={style} href="#about">About</a></li>
+        <li><a className={style} href="#stack">Stack</a></li>
+        <li><a className={style} href="#projects">Projects</a></li>
+        <li><a className={style} href="#contact">Contact</a></li>
       </ul>
     </div>
   )
