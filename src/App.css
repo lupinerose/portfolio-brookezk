@@ -29,8 +29,12 @@ html {
 }
 
 a {
+  font-family: 'Shadows Into Light', cursive;
+  font-weight: 300;
   text-decoration: none;
   color: black;
+  font-size: 20px;
+  letter-spacing: .1em;
 }
 
 li {
@@ -66,9 +70,9 @@ li {
 
 h1 {
   margin: -10px 0px 0px 40px;
-  font-family: 'Yesteryear';
+  font-family: 'Shrikhand', cursive;
   letter-spacing: .1em;
-  font-size: 140px;
+  font-size: 100px;
   mix-blend-mode: difference;
   color: white;
   /* text-align: center; */
