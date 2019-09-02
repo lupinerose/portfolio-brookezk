@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  height: 6144;
+  width: 1440px;
+  background-image: url("./assets/Desktop.jpg")
 }
 
 .App-logo {
