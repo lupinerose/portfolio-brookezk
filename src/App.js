@@ -1,9 +1,11 @@
 import React from 'react';
 import './App.css';
+import Nav from './components/Nav'
 
 function App() {
   return (
     <div className="App">
+
       <div className="about container">
         <h1>Brooke Kullberg</h1>
       </div>
