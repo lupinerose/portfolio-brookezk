@@ -7,14 +7,15 @@ class App extends React.Component {
     super(props);
     this.state = {
       active: 'about',
-      transform: 'transform: "translateY(0px)"'
+      // transform: 'color: black'
+      transform: 0
     };
     // let style = {
     //   transform: "transform: translateY(0px)"
     // }
     // this.style = { transform: 'translateY(0px)' };
     // this.listenScrollEvent = this.listenScrollEvent.bind(this);
-    // this.handleScroll = this.handleScroll.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
   }
   
 
@@ -31,15 +32,16 @@ class App extends React.Component {
   }
 
   handleScroll = e => {
-    // let scrollTop = window.scrollY;
+    let scrollTop = window.scrollY;
     // let scrollTop = e.srcElement.body.scrollTop;
-    let itemTranslate = -60;
+    // let itemTranslate = this.state.transform;
     // let itemTranslate = Math.min(0, scrollTop/3 - 60);
     // console.log(scrollTop);
-    console.log(itemTranslate);
+    console.log(scrollTop);
     // console.log(typeof(scrollTop));
     this.setState({
-      transform: `transform: translateY(${itemTranslate}px)`
+      // transform: 'color: red'
+      transform: scrollTop
     });
     // console.log(itemTranslate);
   }
@@ -56,7 +58,10 @@ class App extends React.Component {
   }
   
   render() {
-    let style = this.state.transform;
+    let num = this.state.transform;
+    let style = {
+      transform: "translateY(" + num + "px)"
+    };
     console.log(this.state.transform);
     console.log(style);
     return (
@@ -65,7 +70,7 @@ class App extends React.Component {
           <Nav activeLink={this.state.active}/>
         </div>
         <div id="about" className="about container">
-          <h1 style={{style}}>Brooke Kullberg</h1>
+          <h1 style={style} onScroll={this.handleScroll}>Brooke Kullberg</h1>
         </div>
         <div id="stack" className="stack container">
         <h1>Stack</h1>
