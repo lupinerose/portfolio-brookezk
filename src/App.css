@@ -1,7 +1,15 @@
+/* * {
+  border: 1px solid black;
+} */
+
 .App {
-  height: 6144;
-  width: 1440px;
-  background-image: url("./assets/Desktop.jpg")
+  height: 5300px;
+  width: 1280px;
+  /* background-color: blue; */
+  background-image: url("./assets/Desktop.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .App-logo {
