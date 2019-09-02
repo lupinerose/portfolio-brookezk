@@ -7,10 +7,17 @@
   background-image: linear-gradient(red, yellow, green, purple, black);
 } */
 
+.bold {
+  font-weight: bold;
+}
+
+.regular {
+  font-weight: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
-
 
 .fixedNav {
   position: fixed;
@@ -27,6 +34,7 @@ a {
 
 li {
   list-style: none;
+  padding: 5px;
 }
 
 .App {
