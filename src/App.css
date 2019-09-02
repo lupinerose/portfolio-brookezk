@@ -52,6 +52,7 @@ li {
 }
 
 .container {
+  overflow: hidden;
   height: 700px;
   width: 1280px;
   display: flex;
@@ -71,7 +72,6 @@ h1 {
 }
 
 .about {
-  overflow: hidden;
 }
 
 .stack{
