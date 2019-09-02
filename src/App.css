@@ -2,17 +2,69 @@
   border: 1px solid black;
 } */
 
+/* header { 
+  background-image: url("./assets/Desktop.jpg"); 
+  background-image: linear-gradient(red, yellow, green, purple, black);
+} */
+
+
 .App {
-  height: 5300px;
-  width: 1280px;
+  background-color: white;
+  height: auto;
+  width: auto;
   /* background-color: blue; */
   background-image: url("./assets/Desktop.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
+.container {
+  height: 700px;
+  width: 1280px;
+  display: flex;
+  /* align-content: center; */
+  align-items: flex-start;
+  /* align-self: center; */
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+
+
+h1 {
+  font-size: 100px;
+  mix-blend-mode: difference;
+  color: white;
+  /* text-align: center; */
+}
+
+.stack{
+
+}
+
+.project1 {
+
+}
+
+.project2 {
+
+}
+
+.project3 {
+
+}
+
+.project4 {
+
+}
+
+.contact {
+
+}
+
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -40,4 +92,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
