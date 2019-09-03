@@ -80,7 +80,9 @@ class App extends React.Component {
         </div>
         <div id="about" className="about container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
+            <div className="title">
+              <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
+            </div>
             <div className="flexAbout">
               <About />
             </div>
