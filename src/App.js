@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './components/Nav.jsx'
 import About from './components/About.jsx'
 import Stack from './components/Stack.jsx'
+import Project1 from './components/Project1.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -94,7 +95,12 @@ class App extends React.Component {
           </div>
         </div>
         <div id="projects" className="project1 container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Project 1</h1>
+          <div>
+            <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+          </div>
+          <div>
+            <Project1 />
+          </div>
         </div>
         <div className="project2 container">
         <h1 style={style} onScroll={this.listenScrollEvent}>Project 2</h1>
