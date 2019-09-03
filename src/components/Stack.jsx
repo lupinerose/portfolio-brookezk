@@ -21,6 +21,8 @@ export default function Stack() {
             <p>Entity Framework</p>
             <p>Socket.IO</p>
             <p>Node.JS</p>
+            <p>SQL</p>
+            <p>APIs / Curl</p>
         </div>
         <div className="gridChild3">
           <h3>Databases</h3> 
