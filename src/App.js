@@ -89,7 +89,7 @@ class App extends React.Component {
           <div>
             <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
             <div>
-              <Stack className="flexStack"/>
+              <Stack/>
             </div>
           </div>
         </div>
