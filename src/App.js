@@ -86,8 +86,12 @@ class App extends React.Component {
           </div>
         </div>
         <div id="stack" className="stack container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
-          <Stack />
+          <div>
+            <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
+            <div>
+              <Stack className="flexStack"/>
+            </div>
+          </div>
         </div>
         <div id="projects" className="project1 container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Project 1</h1>
