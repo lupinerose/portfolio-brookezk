@@ -178,6 +178,10 @@ h1 {
   justify-content: center;
 }
 
+.stack h1 {
+  margin-left: -25px;
+}
+
 .project1 {
 
 }
