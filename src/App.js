@@ -98,20 +98,20 @@ class App extends React.Component {
         </div>
         <div id="projects" className="project1 container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+            <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1>
           </div>
           <div>
             <Project1 />
           </div>
         </div>
         <div className="project2 container">
-        <h1 style={style} onScroll={this.listenScrollEvent}>Project 2</h1>
+        <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
         </div>
         <div className="project3 container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Project 3</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1>
         </div>
         <div className="project4 container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Project 4</h1>
+          <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1>
         </div>
         <div id="contact" className="contact container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1>
