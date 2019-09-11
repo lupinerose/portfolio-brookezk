@@ -27,9 +27,11 @@ export default function Stack() {
         </div>
         <div className="gridChild3">
           <h3>Databases</h3> 
-            <p>MySql & MAMP</p>
-            <p>Firebase & JSON</p>
-            <p>Postgres & pgAdmin4</p>
+            <p>MySql & phpMyAdmin</p>
+            <p>Firebase Realtime database</p>
+            <p>PostgreSQL & pgAdmin4</p>
+            <p>JSON</p>
+            <p>YML</p>
         </div>
         <div className="gridChild4">
           <h3>Concepts</h3> 
