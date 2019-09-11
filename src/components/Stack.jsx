@@ -13,6 +13,7 @@ export default function Stack() {
             <p>React Native</p>
             <p>Redux/Saga</p>
             <p>Angular</p>
+            <p>ESLint</p>
         </div>
         <div className="gridChild2">
           <h3>Back-end</h3>
@@ -40,6 +41,7 @@ export default function Stack() {
         <div className="gridChild5">
           <h3>Design/Hosting</h3>
             <p>Figma</p>
+            <p>Responsive Design</p>
             <p>Photopea</p>
             <p>CSS3</p>
             <p>Firebase</p>
@@ -53,6 +55,8 @@ export default function Stack() {
             <p>NPM</p>
             <p>Homebrew</p>
             <p>Visual Studio Code</p>
+            <p>Jasmine/Karma/Jest</p>
+            <p>MSTest</p>
         </div>
       </div>
     </div>
