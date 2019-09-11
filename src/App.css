@@ -213,6 +213,7 @@ h1 {
 }
 
 .contactContent {
+  /* border: 4px solid white; */
   margin-top: 285px;
   font-weight: 600;
   font-family: 'Bree Serif', serif;
@@ -222,6 +223,7 @@ h1 {
   color: white;
   text-align: center;
   margin-left: -150px;
+  letter-spacing: 3px;
 }
 
 .contactContent a {
