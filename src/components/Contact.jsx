@@ -1,4 +1,5 @@
 import React from 'react';
+import pdf from '../documents/Brooke-Kullberg-Resume.pdf';
 
 export default function Contact() {
   return(
@@ -7,7 +8,7 @@ export default function Contact() {
         <p>brookekullberg@gmail.com</p>
         <p><a target="_blank" href="https://www.linkedin.com/in/brooke-kullberg/">LinkedIn</a></p>
         <p><a target="_blank" href="https://www.github.com/brookezk">Github</a></p>
-        <p>Resume</p>
+        <p><a target="_blank" href={pdf}>Resume</a></p>
       </div>
       <div className="footer">
         <h6><em>Original Design and Media by Brooke Kullberg!</em></h6>
