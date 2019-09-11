@@ -28,7 +28,7 @@ html {
   padding: 10px;
 }
 
-a {
+.navAnchors a {
   font-family: 'Shadows Into Light', cursive;
   font-weight: 300;
   text-decoration: none;
@@ -206,14 +206,30 @@ h1 {
   letter-spacing: 1px;
   font-size: 25px;
   font-family: 'Bree Serif', serif;
-  /* text-align: left; */
-  margin-top: 100px;
-  /* bottom: 0; */
+  text-align: center;
+  margin-top: 155px;
+  margin-left: -150px;
+  line-height: .05;
 }
 
 .contactContent {
-  margin-top: 400px;
+  margin-top: 285px;
+  font-weight: 600;
+  font-family: 'Bree Serif', serif;
+  mix-blend-mode: difference;
+  font-size: 40px;
+  line-height: .3;
+  color: white;
+  text-align: center;
+  margin-left: -150px;
 }
+
+.contactContent a {
+  color: white;
+  text-decoration: none;
+}
+
+
 
 /* .App-logo {
   animation: App-logo-spin infinite 20s linear;
