@@ -8,9 +8,9 @@ export default function About() {
       <h3><span className="about-background">Specializing in Javascript, C#.NET, and React.</span></h3>
       <h3><span className="about-background">Dedicated to thorough design and planning to enable effective solutions.</span></h3>
       <p>&hearts; &hearts; &hearts; &hearts; &hearts;</p>
-      <h3><span className="about-background">Language (human and computer) fanatic!</span></h3>
-      <h3><span className="about-background">Cyber security enthusiast!</span></h3>
-      <h3><span className="about-background">Privacy Advocate!</span></h3>
+      <h3><span className="about-background"><em>Language (human and computer) fanatic!</em></span></h3>
+      <h3><span className="about-background"><em>Cyber security enthusiast!</em></span></h3>
+      <h3><span className="about-background"><em>Privacy Advocate!</em></span></h3>
     </div>
   )
 }
