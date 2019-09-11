@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './App.css'
 import Nav from './components/Nav.jsx'
 import About from './components/About.jsx'
 import Stack from './components/Stack.jsx'
 import Project1 from './components/Project1.jsx'
+import Contact from './components/Contact.jsx'
 
 class App extends React.Component {
   constructor(props) {
@@ -114,7 +115,12 @@ class App extends React.Component {
           <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1>
         </div>
         <div id="contact" className="contact container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1>
+          <div>
+            <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1>
+          </div>
+          <div>
+            <Contact />
+          </div>
         </div>
       </div>
     );
