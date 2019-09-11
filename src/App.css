@@ -203,7 +203,16 @@ h1 {
 }
 
 .footer {
-  text-align: center;
+  letter-spacing: 1px;
+  font-size: 25px;
+  font-family: 'Bree Serif', serif;
+  /* text-align: left; */
+  margin-top: 100px;
+  /* bottom: 0; */
+}
+
+.contactContent {
+  margin-top: 400px;
 }
 
 /* .App-logo {
