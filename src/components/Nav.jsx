@@ -20,7 +20,7 @@ export default function Nav(props) {
 
   return (
     <div>
-      <ul>
+      <ul className="navAnchors">
         {props.activeLink === 'about' ? <li style={yellowGlow}><a className='bold' href="#about">About</a></li> : <li><a href="#about">About</a></li>}
         {props.activeLink === 'stack' ? <li style={blueGlow}><a className='bold' href="#stack">Stack</a></li> : <li><a href="#stack">Stack</a></li>}
         {props.activeLink === 'projects' ? <li style={redGlow}><a className='bold' href="#projects">Projects</a></li> : <li><a href="#projects">Projects</a></li>}
