@@ -1,12 +1,3 @@
-/* * {
-  border: 1px solid black;
-} */
-
-/* header { 
-  background-image: url("./assets/Desktop.jpg"); 
-  background-image: linear-gradient(red, yellow, green, purple, black);
-} */
-
 .bold {
   font-weight: bold;
 }
@@ -35,8 +26,6 @@ html {
   color: black;
   font-size: 20px;
   letter-spacing: .1em;
-  /* mix-blend-mode: difference; */
-  /* color: white; */
 }
 
 li {
@@ -48,7 +37,6 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* align-self: center; */
   text-align: center;
 }
 
@@ -56,7 +44,6 @@ li {
   background-color: white;
   height: auto;
   width: auto;
-  /* background-color: blue; */
   background-image: url("./assets/Desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -69,20 +56,10 @@ li {
   overflow: hidden;
   height: 700px;
   width: 1280px;
-  /* display: flex; */
-  /* align-content: center; */
-  /* align-items: flex-start; */
-  /* align-self: center; */
-  /* justify-content: left; */
-  /* border: 1px solid black; */
 }
 
 .about-background {
-  /* mix-blend-mode: difference;
-  color: white;  */
-  /* background-color: white; */
   background-color: rgba(228, 149, 244, 0.4);
-  /* background-color: rgba(255, 255, 255, 0.4); */
   padding: 5px;
 }
 
@@ -98,19 +75,8 @@ li {
   justify-content: center;
   text-align: center;
   font-size: 22px;
-  /* margin-top: 20px; */
   width: 100%;
 }
-
-/* .flexStack {
-
-  /* display: flex; */
-  /* justify-content: right; */
-  /* text-align: center;
-  font-size: 20px;
-  margin: 20px;
-  width: 100%; */
-
 
 .stackGrid {
   display: grid;
@@ -120,7 +86,6 @@ li {
   grid-gap: 1em;
   text-align: center;
   font-size: 15px;
-  /* width: 100%; */
   letter-spacing: 1px;
   font-family: 'Bree Serif', serif;
   margin: 30px;
@@ -176,34 +141,24 @@ h1 {
   font-size: 100px;
   mix-blend-mode: difference;
   color: white;
-  /* text-align: left; */
-  /* text-align: center; */
 }
 
 h2 {
-  /* mix-blend-mode: difference; */
-  /* color: white; */
   font-family: 'Bree Serif', serif;
 }
 
 .about {
   text-align: center;
-  /* display: flex; */
   justify-content: center;
 }
 
 .title {
-  /* margin-right: 310px; */
 }
 
 .stack{
-  /* justify-content: center;
-  margin-left: 30;
-  margin-right: 30; */
 }
 
 .about {
-  /* text-align: center; */
 }
 
 .project1 {
@@ -232,12 +187,10 @@ h2 {
   font-family: 'Bree Serif', serif;
   text-align: center;
   margin-top: 155px;
-  /* margin-left: -150px; */
   line-height: .05;
 }
 
 .contactContent {
-  /* border: 4px solid white; */
   margin-top: 150px;
   font-weight: 600;
   font-family: 'Bree Serif', serif;
@@ -246,7 +199,6 @@ h2 {
   line-height: .3;
   color: white;
   text-align: center;
-  /* margin-left: -150px; */
   letter-spacing: 3px;
 }
 
@@ -254,35 +206,3 @@ h2 {
   color: white;
   text-decoration: none;
 }
-
-
-
-/* .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
