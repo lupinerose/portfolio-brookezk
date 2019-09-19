@@ -65,7 +65,7 @@ li {
 }
 
 .about-background {
-  background-color: rgba(228, 149, 244, 0.4);
+  background-color: rgba(228, 149, 244, 0.6);
   padding: 5px;
 }
 
@@ -75,6 +75,7 @@ li {
 }
 
 .flexAbout {
+  margin-top: 10px;
   letter-spacing: 1px;
   font-family: 'Bree Serif', serif;
   display: flex;
