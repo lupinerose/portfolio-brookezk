@@ -31,7 +31,8 @@ export default function Project3() {
       <div className="flex">
         <div style={style.info}>
           <p><span className="proj1-background">&#10007; Javascript & Angular front-end</span></p>
-          <p><span className="proj1-background">&#10007; Firebase hosted, realtime db implemented</span></p>
+          <p><span className="proj1-background">&#10007; Hosted on Firebase</span></p>
+          <p><span className="proj1-background">&#10007; Implemented Firebase Realtime db</span></p>
           <p><span className="proj1-background">&#10007; Routing with Angular</span></p>
         </div>
         <img src={iovation} width="600px" height="auto" alt="voces website"/>
