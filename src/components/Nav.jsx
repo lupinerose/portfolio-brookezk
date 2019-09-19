@@ -2,21 +2,25 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function Nav(props) {
+
   let yellowGlow = {
     textShadow: "0 0 8px yellow"
   }
+  // 228, 180, 72
 
   let redGlow = {
     textShadow: "0 0 8px red"
   }
+  // 181, 62, 58,
 
   let greenGlow = {
     textShadow: "0 0 8px green"
   }
-
+  // 88,147,119,
   let blueGlow = {
     textShadow: "0 0 8px blue"
   }
+  // 52, 63, 90,
   
   return (
     <div>
