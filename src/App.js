@@ -21,30 +21,30 @@ class App extends React.Component {
   listenScrollEvent = e => {
     let scrollTop = window.scrollY;
     console.log(scrollTop)
-    if (window.scrollY > 4095) {
+    if (window.scrollY > 4195) {
       this.setState({
         active: 'contact',
         transform: scrollTop - 4195})
-    } else if (window.scrollY > 3395) {
+    } else if (window.scrollY > 3485) {
       this.setState({
         active: 'project4',
         transform: scrollTop - 3485})
-    } else if (window.scrollY > 2715) {
+    } else if (window.scrollY > 2785) {
       this.setState({
         active: 'project3',
         transform: scrollTop - 2785})
-    } else if (window.scrollY > 2035) {
+    } else if (window.scrollY > 2095) {
       this.setState({
         active: 'project2',
         transform: scrollTop - 2095})
-    } else if (window.scrollY > 1355) {
+    } else if (window.scrollY > 1395) {
       this.setState({
         active: 'project1',
         transform: scrollTop - 1395})
-    } else if (window.scrollY > 675) {
+    } else if (window.scrollY > 690) {
       this.setState({
         active: 'stack',
-        transform: scrollTop - 680})
+        transform: scrollTop - 690})
     } else {
       this.setState({
         active: 'about',
@@ -103,7 +103,7 @@ class App extends React.Component {
         </div>
         <div id="projects" className="project1 container">
           <div>
-             {this.state.active === "projects" ? <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1> : <h1>Voces</h1>}
+             {this.state.active === "project1" ? <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1> : <h1>Voces</h1>}
             <div>
               <Project1 />
             </div>
@@ -111,7 +111,7 @@ class App extends React.Component {
         </div>
         <div className="project2 container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+          {this.state.active === "project2" ? <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1> : <h1>PDX Field Guide</h1>}
             <div>
               <Project2 />
             </div>
@@ -119,18 +119,18 @@ class App extends React.Component {
         </div>
         <div className="project3 container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1>
+          {this.state.active === "project3" ? <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1> : <h1>iovation Clone</h1>}
             <div>
               <Project3 />
             </div>
           </div>
         </div>
         <div className="project4 container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1>
+        {this.state.active === "project4" ? <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
         </div>
         <div id="contact" className="contact container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1>
+          {this.state.active === "contact" ? <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1> : <h1>Contact</h1>}
           </div>
           <div>
             <Contact />
