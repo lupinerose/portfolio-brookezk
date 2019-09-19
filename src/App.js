@@ -27,24 +27,24 @@ class App extends React.Component {
         transform: scrollTop - 4195})
     } else if (window.scrollY > 3395) {
       this.setState({
-        active: 'projects',
+        active: 'project4',
         transform: scrollTop - 3485})
     } else if (window.scrollY > 2715) {
       this.setState({
-        active: 'projects',
+        active: 'project3',
         transform: scrollTop - 2785})
     } else if (window.scrollY > 2035) {
       this.setState({
-        active: 'projects',
+        active: 'project2',
         transform: scrollTop - 2095})
     } else if (window.scrollY > 1355) {
       this.setState({
-        active: 'projects',
+        active: 'project1',
         transform: scrollTop - 1395})
     } else if (window.scrollY > 675) {
       this.setState({
         active: 'stack',
-        transform: scrollTop - 705})
+        transform: scrollTop - 680})
     } else {
       this.setState({
         active: 'about',
@@ -62,20 +62,22 @@ class App extends React.Component {
   
   componentDidMount() {
     window.addEventListener('scroll', this.listenScrollEvent);
-    window.addEventListener('scroll', this.handleScroll);
+    // window.addEventListener('scroll', this.handleScroll);
   }
   
   componentWillUnmount() {
     window.removeEventListener('scroll', this.listenScrollEvent);
-    window.removeEventListener('scroll', this.handleScroll);
+    // window.removeEventListener('scroll', this.handleScroll);
   }
   
   render() {
     let num = this.state.transform;
+    let num2 = 100 / num;
+    if (num2 < .25) { num2 = 0} 
     let style = {
-      transform: "translateY(" + num + "px)"
+      transform: "translateY(" + num + "px)",
+      opacity: num2
     };
-
     return (
       <div className="App">
         <div className="fixedNav">
@@ -84,16 +86,16 @@ class App extends React.Component {
         <div id="about" className="about container">
           <div>
             <div className="title">
-              <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1>
+              {this.state.active === "about" ? <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1> : <h1>Brooke Kullberg</h1>}
             </div>
             <div className="flexAbout">
               <About />
             </div>
           </div>
         </div>
-        <div id="stack" className="stack container">
+        <div id="stack" className="container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1>
+            {this.state.active === "stack" ? <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1> : <h1>Stack</h1>}
             <div>
               <Stack/>
             </div>
@@ -101,7 +103,7 @@ class App extends React.Component {
         </div>
         <div id="projects" className="project1 container">
           <div>
-            <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1>
+             {this.state.active === "projects" ? <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1> : <h1>Voces</h1>}
             <div>
               <Project1 />
             </div>
