@@ -22,10 +22,10 @@ class App extends React.Component {
   listenScrollEvent = e => {
     let scrollTop = window.scrollY;
     console.log(scrollTop)
-    if (window.scrollY > 4155) {
+    if (window.scrollY > 4185) {
       this.setState({
         active: 'contact',
-        transform: scrollTop - 4155})
+        transform: scrollTop - 4185})
     } else if (window.scrollY > 3500) {
       this.setState({
         active: 'project4',
