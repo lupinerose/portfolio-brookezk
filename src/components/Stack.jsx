@@ -30,8 +30,7 @@ export default function Stack() {
             <p>MySql & phpMyAdmin</p>
             <p>Firebase Realtime database</p>
             <p>PostgreSQL & pgAdmin4</p>
-            <p>JSON</p>
-            <p>YML</p>
+            <p>JSON / YML</p>
         </div>
         <div className="gridChild4">
           <h3>Concepts</h3> 
@@ -39,12 +38,13 @@ export default function Stack() {
             <p>Behavior Driven Development</p>
             <p>RESTful Routing</p>
             <p>MVC architecture</p>
+            <p>Agile Methodologies</p>
         </div>
         <div className="gridChild5">
           <h3>Design/Hosting</h3>
             <p>Figma</p>
-            <p>Responsive Design</p>
             <p>Photopea</p>
+            <p>Responsive Design</p>
             <p>CSS3</p>
             <p>Firebase</p>
             <p>Heroku</p>
@@ -53,12 +53,9 @@ export default function Stack() {
           <h3>Work Flow</h3>
             <p>Git</p>
             <p>Github</p>
-            <p>Terminal</p>
-            <p>NPM</p>
-            <p>Homebrew</p>
             <p>Visual Studio Code</p>
-            <p>Jasmine/Karma/Jest</p>
-            <p>MSTest</p>
+            <p>NPM</p>
+            <p>Jira</p>
         </div>
       </div>
     </div>
