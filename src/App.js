@@ -6,6 +6,7 @@ import Stack from './components/Stack.jsx'
 import Project1 from './components/Project1.jsx'
 import Project2 from './components/Project2.jsx'
 import Project3 from './components/Project3.jsx'
+import Project4 from './components/Project4.jsx'
 import Contact from './components/Contact.jsx'
 
 class App extends React.Component {
@@ -111,7 +112,7 @@ class App extends React.Component {
         </div>
         <div className="project2 container">
           <div>
-          {this.state.active === "project2" ? <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1> : <h1>PDX Field Guide</h1>}
+            {this.state.active === "project2" ? <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1> : <h1>PDX Field Guide</h1>}
             <div>
               <Project2 />
             </div>
@@ -119,22 +120,27 @@ class App extends React.Component {
         </div>
         <div className="project3 container">
           <div>
-          {this.state.active === "project3" ? <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1> : <h1>iovation Clone</h1>}
+            {this.state.active === "project3" ? <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1> : <h1>iovation Clone</h1>}
             <div>
               <Project3 />
             </div>
           </div>
         </div>
         <div className="project4 container">
-        {this.state.active === "project4" ? <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
+          <div>
+            {this.state.active === "project4" ? <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
+            <div>
+              <Project4 />
+            </div>
+          </div>
         </div>
         <div id="contact" className="contact container">
           <div>
-          {this.state.active === "contact" ? <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1> : <h1>Contact</h1>}
-          </div>
-          <div>
-            <Contact />
-          </div>
+            {this.state.active === "contact" ? <h1 style={style} onScroll={this.listenScrollEvent}>Contact</h1> : <h1>Contact</h1>}
+            <div>
+              <Contact />
+            </div>
+          </div>  
         </div>
       </div>
     );
