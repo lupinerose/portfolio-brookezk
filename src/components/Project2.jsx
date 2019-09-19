@@ -24,7 +24,7 @@ let style = {
   }
 }
 
-export default function Project1() {
+export default function Project2() {
   
   return (
     <div>

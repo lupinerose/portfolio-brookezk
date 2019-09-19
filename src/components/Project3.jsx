@@ -23,7 +23,7 @@ let style = {
   }
 }
 
-export default function Project1() {
+export default function Project3() {
   
   return (
     <div>
