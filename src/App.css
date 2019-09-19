@@ -43,6 +43,12 @@ li {
   list-style: none;
   padding: 5px;
 }
+.flex {
+  margin-top: 400px;
+  display: inline-flex;
+  /* justify-content: space-around; */
+  text-align: center;
+}
 
 .App {
   background-color: white;
@@ -61,17 +67,18 @@ li {
   overflow: hidden;
   height: 700px;
   width: 1280px;
-  display: flex;
+  /* display: flex; */
   /* align-content: center; */
-  align-items: flex-start;
+  /* align-items: flex-start; */
   /* align-self: center; */
-  justify-content: left;
+  /* justify-content: left; */
   /* border: 1px solid black; */
 }
 
 .about-background {
   /* mix-blend-mode: difference;
   color: white;  */
+  /* background-color: white; */
   background-color: rgba(228, 149, 244, 0.4);
   padding: 5px;
 }
@@ -166,6 +173,7 @@ h1 {
 }
 
 .about {
+  text-align: center;
   /* display: flex; */
   justify-content: center;
 }
@@ -175,11 +183,11 @@ h1 {
 }
 
 .stack{
-  justify-content: center;
+  /* justify-content: center; */
 }
 
-.stack h1 {
-  margin-left: -25px;
+.about {
+  /* text-align: center; */
 }
 
 .project1 {
