@@ -116,11 +116,11 @@ li {
   display: grid;
   grid-auto-columns: 15% 15% 15% 15% 15% 15%;
   grid-auto-rows: 1fr 1fr 1fr 1fr 1fr;
-  width: 100%;
+  width: 90%;
   grid-gap: 1em;
   text-align: center;
   font-size: 15px;
-  width: 100%;
+  /* width: 100%; */
   letter-spacing: 1px;
   font-family: 'Bree Serif', serif;
   margin: 30px;
@@ -197,7 +197,9 @@ h2 {
 }
 
 .stack{
-  /* justify-content: center; */
+  /* justify-content: center;
+  margin-left: 30;
+  margin-right: 30; */
 }
 
 .about {
