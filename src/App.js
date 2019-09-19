@@ -76,6 +76,7 @@ class App extends React.Component {
     let num2 = 100 / num;
     if (num2 < .25) { num2 = 0} 
     let style = {
+      zIndex: -1,
       transform: "translateY(" + num + "px)",
       opacity: num2
     };
@@ -89,15 +90,15 @@ class App extends React.Component {
             <div className="title">
               {this.state.active === "about" ? <h1 style={style} onScroll={this.listenScrollEvent}>Brooke Kullberg</h1> : <h1>Brooke Kullberg</h1>}
             </div>
-            <div className="flexAbout">
+            <div className="flexAbout z">
               <About />
             </div>
           </div>
         </div>
-        <div id="stack" className="container">
+        <div id="stack" className="stack container">
           <div>
             {this.state.active === "stack" ? <h1 style={style} onScroll={this.listenScrollEvent}>Stack</h1> : <h1>Stack</h1>}
-            <div>
+            <div className="z">
               <Stack/>
             </div>
           </div>
@@ -105,7 +106,7 @@ class App extends React.Component {
         <div id="projects" className="project1 container">
           <div>
              {this.state.active === "project1" ? <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1> : <h1>Voces</h1>}
-            <div>
+            <div className="z">
               <Project1 />
             </div>
           </div>  
@@ -113,7 +114,7 @@ class App extends React.Component {
         <div className="project2 container">
           <div>
             {this.state.active === "project2" ? <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1> : <h1>PDX Field Guide</h1>}
-            <div>
+            <div className="z">
               <Project2 />
             </div>
           </div>
@@ -121,7 +122,7 @@ class App extends React.Component {
         <div className="project3 container">
           <div>
             {this.state.active === "project3" ? <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1> : <h1>iovation Clone</h1>}
-            <div>
+            <div className="z">
               <Project3 />
             </div>
           </div>
@@ -129,7 +130,7 @@ class App extends React.Component {
         <div className="project4 container">
           <div>
             {this.state.active === "project4" ? <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
-            <div>
+            <div className="z">
               <Project4 />
             </div>
           </div>
