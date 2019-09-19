@@ -5,6 +5,7 @@ import About from './components/About.jsx'
 import Stack from './components/Stack.jsx'
 import Project1 from './components/Project1.jsx'
 import Project2 from './components/Project2.jsx'
+import Project3 from './components/Project3.jsx'
 import Contact from './components/Contact.jsx'
 
 class App extends React.Component {
@@ -101,21 +102,26 @@ class App extends React.Component {
         <div id="projects" className="project1 container">
           <div>
             <h1 style={style} onScroll={this.listenScrollEvent}>Voces</h1>
-          </div>
-          <div>
-            <Project1 />
-          </div>
+            <div>
+              <Project1 />
+            </div>
+          </div>  
         </div>
         <div className="project2 container">
           <div>
-          <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
-          </div>
-          <div>
-            <Project2 />
+            <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+            <div>
+              <Project2 />
+            </div>
           </div>
         </div>
         <div className="project3 container">
-          <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1>
+          <div>
+            <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1>
+            <div>
+              <Project3 />
+            </div>
+          </div>
         </div>
         <div className="project4 container">
           <h1 style={style} onScroll={this.listenScrollEvent}>Assassins</h1>
