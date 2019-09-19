@@ -4,6 +4,7 @@ import voces from '../assets/voces.png';
 let style = {
   h2: {
     // textAlign: "center",
+    marginTop: 20,
     marginLeft: "120px",
     fontSize: "30px"
   },
@@ -13,12 +14,12 @@ let style = {
     // backgroundColor: "white",
     paddingLeft: 20,
     paddingRight: 20,
-    textAlign: "center",
-    marginLeft: 100
+    textAlign: "center"
+    // marginLeft: 100
   },
   span: {
     backgroundColor: "rgba(228, 180, 72)",
-    padding: 10
+    padding: 5
   }
 }
 
