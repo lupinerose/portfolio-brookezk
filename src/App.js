@@ -4,6 +4,7 @@ import Nav from './components/Nav.jsx'
 import About from './components/About.jsx'
 import Stack from './components/Stack.jsx'
 import Project1 from './components/Project1.jsx'
+import Project2 from './components/Project2.jsx'
 import Contact from './components/Contact.jsx'
 
 class App extends React.Component {
@@ -106,7 +107,12 @@ class App extends React.Component {
           </div>
         </div>
         <div className="project2 container">
-        <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+          <div>
+          <h1 style={style} onScroll={this.listenScrollEvent}>PDX Field Guide</h1>
+          </div>
+          <div>
+            <Project2 />
+          </div>
         </div>
         <div className="project3 container">
           <h1 style={style} onScroll={this.listenScrollEvent}>iovation Clone</h1>
