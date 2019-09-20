@@ -14,8 +14,6 @@ html {
   position: fixed;
   z-index: 1;
   overflow-x: hidden;
-  top: 0;
-  right: 0;
   padding: 10px;
 }
 
@@ -40,12 +38,19 @@ li {
   text-align: center;
 }
 
+.centerFlex {
+  display: flex;
+  justify-content: center;
+}
+
 .App {
+  /* display: inline-flex; */
+  /* justify-content: center; */
   background-color: white;
   height: auto;
-  width: auto;
+  width: 1280;
   background-image: url("./assets/Desktop.jpg");
-  background-size: cover;
+  background-size: 1280 auto;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
