@@ -111,12 +111,14 @@ class App extends React.Component {
       nav: {
         top: top,
         right: right
+      },
+      link: {
+        textDecoration: "none"
       }
     };
 
     return (
       <div className="centerFlex">
-
         <div className="App">
           <div style={style.nav} className="fixedNav">
             <Nav activeLink={this.state.active}/>
@@ -141,7 +143,7 @@ class App extends React.Component {
           </div>
           <div id="projects" className="project1 container">
             <div>
-              {this.state.active === "project1" ? <h1 style={style.trans} onScroll={this.listenScrollEvent}>Voces</h1> : <h1>Voces</h1>}
+              {this.state.active === "project1" ? <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://brookezk.github.io/Voces/#/"><h1 style={style.trans} onScroll={this.listenScrollEvent}>Voces</h1></a> : <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://brookezk.github.io/Voces/#/"><h1>Voces</h1></a>}
               <div className="z">
                 <Project1 />
               </div>
@@ -149,7 +151,7 @@ class App extends React.Component {
           </div>
           <div className="project2 container">
             <div>
-              {this.state.active === "project2" ? <h1 style={style.trans} onScroll={this.listenScrollEvent}>PDX Field Guide</h1> : <h1>PDX Field Guide</h1>}
+              {this.state.active === "project2" ? <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://portland-field-guide.firebaseapp.com/"><h1 style={style.trans} onScroll={this.listenScrollEvent}>PDX Field Guide</h1></a> : <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://portland-field-guide.firebaseapp.com/"><h1>PDX Field Guide</h1></a>}
               <div className="z">
                 <Project2 />
               </div>
@@ -157,7 +159,7 @@ class App extends React.Component {
           </div>
           <div className="project3 container">
             <div>
-              {this.state.active === "project3" ? <h1 style={style.trans} onScroll={this.listenScrollEvent}>iovation Clone</h1> : <h1>iovation Clone</h1>}
+              {this.state.active === "project3" ? <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://iovation-remake.firebaseapp.com/"><h1 style={style.trans} onScroll={this.listenScrollEvent}>iovation Clone</h1></a> : <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://iovation-remake.firebaseapp.com/"><h1>iovation Clone</h1></a>}
               <div className="z">
                 <Project3 />
               </div>
@@ -165,7 +167,7 @@ class App extends React.Component {
           </div>
           <div className="project4 container">
             <div>
-              {this.state.active === "project4" ? <h1 style={style.trans} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
+              {this.state.active === "project4" ? <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://github.com/BrookeZK/Assassin"><h1 style={style.trans} onScroll={this.listenScrollEvent}>Assassins</h1></a> : <a style={style.link} target="_blank" rel="noopener noreferrer" href="https://github.com/BrookeZK/Assassin"><h1>Assassins</h1></a>}
               <div className="z">
                 <Project4 window={this.state.windowX}/>
               </div>
