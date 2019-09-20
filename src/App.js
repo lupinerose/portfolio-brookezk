@@ -95,6 +95,13 @@ class App extends React.Component {
     let num = this.state.transform;
     let num2 = 100 / num;
     if (num2 < .25) { num2 = 0} 
+    let top;
+    let right = 0;
+    if (this.state.windowX > 1280) {
+      right = (this.state.windowX-1280)/2 
+    } else {
+      right = 0;
+    }
     let style = {
       trans: {
         zIndex: -1,
@@ -102,8 +109,8 @@ class App extends React.Component {
         opacity: num2
       },
       nav: {
-        top: 0,
-        right: 0
+        top: top,
+        right: right
       }
     };
 
