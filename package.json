@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage":"https://brookezk.github.io/portfolio-brookezk",
+  "homepage": "https://brookezk.github.io/portfolio-brookezk",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
