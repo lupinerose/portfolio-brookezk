@@ -2,42 +2,49 @@ import React from 'react';
 import macbook from '../assets/MacbookPro.png';
 import assassingif from '../assets/assassin.gif';
 
-let style = {
-  h2: {
-    // textAlign: "center",
-    marginTop: 20,
-    marginLeft: "120px",
-    fontSize: "30px"
-  },
-  info: {
-    fontSize: "25px",
-    fontFamily: "Bree Serif, serif",
-    // backgroundColor: "white",
-    paddingLeft: 20,
-    paddingRight: 20,
-    textAlign: "center",
-    marginRight: 40
-    // marginLeft: 100
-  },
-  span: {
-    backgroundColor: "#b53e3a",
-    padding: 5
-  },
-  gif: {
-    // marginTop: 100,
-    zIndex: "-.5",
-    position: "relative"
-  },
-  mac: {
-    zIndex: 0,
-    position: "absolute",
-    right: 70,
-    top: 3765
-  }
-}
 
-export default function Project4() {
-  
+export default function Project4(props) {
+  let right = 70;
+  if (props.window > 1280) {
+    right = ((props.window-1280)/2)+70
+  } else {
+    right = 70;
+  }
+
+  let style = {
+    h2: {
+      // textAlign: "center",
+      marginTop: 20,
+      marginLeft: "120px",
+      fontSize: "30px"
+    },
+    info: {
+      fontSize: "25px",
+      fontFamily: "Bree Serif, serif",
+      // backgroundColor: "white",
+      paddingLeft: 20,
+      paddingRight: 20,
+      textAlign: "center",
+      marginRight: 40
+      // marginLeft: 100
+    },
+    span: {
+      backgroundColor: "#b53e3a",
+      padding: 5
+    },
+    gif: {
+      // marginTop: 100,
+      zIndex: "-.5",
+      position: "relative"
+    },
+    mac: {
+      zIndex: 0,
+      position: "absolute",
+      right: right,
+      top: 3765
+    }
+  }
+
   return (
     <div>
       <h2 style={style.h2}><span style={style.span}>Team Project! A website as game master for the in-person game.</span></h2>
