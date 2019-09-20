@@ -167,7 +167,7 @@ class App extends React.Component {
             <div>
               {this.state.active === "project4" ? <h1 style={style.trans} onScroll={this.listenScrollEvent}>Assassins</h1> : <h1>Assassins</h1>}
               <div className="z">
-                <Project4 />
+                <Project4 window={this.state.windowX}/>
               </div>
             </div>
           </div>
