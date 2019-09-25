@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/portfolio-brookezk/static/css/main.17e3a527.chunk.css",
+    "main.js": "/portfolio-brookezk/static/js/main.64d12050.chunk.js",
+    "main.js.map": "/portfolio-brookezk/static/js/main.64d12050.chunk.js.map",
+    "runtime~main.js": "/portfolio-brookezk/static/js/runtime~main.3ad1ee6f.js",
+    "runtime~main.js.map": "/portfolio-brookezk/static/js/runtime~main.3ad1ee6f.js.map",
+    "static/js/2.819a8ac2.chunk.js": "/portfolio-brookezk/static/js/2.819a8ac2.chunk.js",
+    "static/js/2.819a8ac2.chunk.js.map": "/portfolio-brookezk/static/js/2.819a8ac2.chunk.js.map",
+    "index.html": "/portfolio-brookezk/index.html",
+    "precache-manifest.84e2f5853dbbf3f04c1b6a35fa5061b0.js": "/portfolio-brookezk/precache-manifest.84e2f5853dbbf3f04c1b6a35fa5061b0.js",
+    "service-worker.js": "/portfolio-brookezk/service-worker.js",
+    "static/css/main.17e3a527.chunk.css.map": "/portfolio-brookezk/static/css/main.17e3a527.chunk.css.map",
+    "static/media/Brooke-Kullberg-Resume.pdf": "/portfolio-brookezk/static/media/Brooke-Kullberg-Resume.8292509d.pdf",
+    "static/media/App.css": "/portfolio-brookezk/static/media/Desktop.7b135381.jpg",
+    "static/media/assassin.gif": "/portfolio-brookezk/static/media/assassin.55b9aeb0.gif",
+    "static/media/iovation.png": "/portfolio-brookezk/static/media/iovation.137c89c5.png",
+    "static/media/pdfieldguide2.png": "/portfolio-brookezk/static/media/pdfieldguide2.a0b18ab2.png",
+    "static/media/pdxfieldguide1.png": "/portfolio-brookezk/static/media/pdxfieldguide1.b750a22d.png",
+    "static/media/voces.png": "/portfolio-brookezk/static/media/voces.526ade51.png"
+  }
+}
