@@ -1,9 +1,8 @@
 {
   "name": "portfolio",
-  "homepage": "https://brookezk.github.io/portfolio-brookezk",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
@@ -15,7 +14,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy-gh-pages": "gh-pages -d build",
+    "deploy-aws": "aws s3 sync build/ s3://brookekullberg.dev --acl public-read"
   },
   "eslintConfig": {
     "extends": "react-app"
