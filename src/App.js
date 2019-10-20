@@ -26,29 +26,29 @@ class App extends React.Component {
   
 
   listenScrollEvent = e => {
-    let scrollTop = window.scrollY;
+    let scrollTop = window.pageYOffset;
     console.log(scrollTop)
-    if (window.scrollY > 4185) {
+    if (window.pageYOffset > 4185) {
       this.setState({
         active: 'contact',
         transform: scrollTop - 4185})
-    } else if (window.scrollY > 3500) {
+    } else if (window.pageYOffset > 3500) {
       this.setState({
         active: 'project4',
         transform: scrollTop - 3500})
-    } else if (window.scrollY > 2785) {
+    } else if (window.pageYOffset > 2785) {
       this.setState({
         active: 'project3',
         transform: scrollTop - 2785})
-    } else if (window.scrollY > 2095) {
+    } else if (window.pageYOffset > 2095) {
       this.setState({
         active: 'project2',
         transform: scrollTop - 2095})
-    } else if (window.scrollY > 1395) {
+    } else if (window.pageYOffset > 1395) {
       this.setState({
         active: 'project1',
         transform: scrollTop - 1395})
-    } else if (window.scrollY > 690) {
+    } else if (window.pageYOffset > 690) {
       this.setState({
         active: 'stack',
         transform: scrollTop - 690})
@@ -104,7 +104,7 @@ class App extends React.Component {
     }
     let style = {
       trans: {
-        zIndex: -1,
+        zIndex: 0,
         transform: "translateY(" + num + "px)",
         opacity: num2
       },
@@ -119,11 +119,11 @@ class App extends React.Component {
 
     return (
       <div>
-        <div className="mediaMessage">
+        {/* <div className="mediaMessage">
           <div>
             <h5 className="mMessage">Mobile design is under construction - please go to your desktop to view Brooke's Portfolio!</h5> 
           </div>
-        </div>
+        </div> */}
         <div className="centerFlex">
           <div className="App">
             <div style={style.nav} className="fixedNav">
