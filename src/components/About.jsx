@@ -10,7 +10,7 @@ export default function About() {
       <p>&hearts; &hearts; &hearts; &hearts; &hearts;</p>
       <h3><span className="about-background"><em>Travel and language fanatic!</em></span></h3>
       <h3><span className="about-background"><em>Cyber security enthusiast!</em></span></h3>
-      <h3><span className="about-background"><em>Privacy advocate!</em></span></h3>
+      <h3><span className="about-background"><em>Data privacy advocate!</em></span></h3>
     </div>
   )
 }
